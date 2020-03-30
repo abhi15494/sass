@@ -1,0 +1,49 @@
+.list {
+  &_container {
+  }
+  &_box {
+    &_items {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    &_item {
+      cursor: pointer;
+      user-select: none;
+      margin-bottom: 1rem;
+      flex: 100%;
+      @include media(tablet) {
+        flex: 0 0 calc(50% - 1rem);
+        padding: 0 0.5rem;
+      }
+      @include media(desktop) {
+        flex: 0 0 calc(25% - 1rem);
+      }
+      
+      &_box {
+        position: relative;
+        z-index: 1;
+        padding: 1rem 0.75rem;
+        box-shadow: 0 0.5rem 1rem #dddddd;
+        background-color: #ffffff;
+        transform: translateY(0);
+        transition: 0.2s all cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+        &:hover {
+          transform: translateY(-0.5rem) scale(1.05);
+          background-color: #f8f8f8;
+          z-index: 2;
+        }
+      }
+      &_heading {
+        font-size: 1.25rem;
+        margin: 0 0 0.5rem;
+      }
+      &_description {
+        margin: 0 0 0.5rem;
+        color: #777777;
+      }
+    }
+  }
+}
