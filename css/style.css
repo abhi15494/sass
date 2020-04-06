@@ -67,3 +67,103 @@ html {
   margin: 0;
   color: #777777;
   font-size: 0.9rem; }
+
+.image_box {
+  position: relative;
+  width: 100%;
+  height: 20rem; }
+  .image_box_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #444444;
+    background-image: url(https://dummyimage.com/1000x400/888/fff);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.img_container {
+  max-width: 60rem;
+  margin: 0 auto; }
+
+.img_box_outer {
+  padding: 1rem; }
+
+.img_box_inner {
+  position: relative;
+  overflow: hidden;
+  background: #eeeeee;
+  padding-top: 10rem; }
+  @media (min-width: 768px) {
+    .img_box_inner {
+      padding-top: 15rem; } }
+  @media (min-width: 992px) {
+    .img_box_inner {
+      padding-top: 20rem; } }
+
+.img_box_image {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.tiles_container {
+  max-width: 60rem;
+  margin: 0 auto; }
+
+.tiles_box_heading {
+  text-align: center;
+  font-size: 2rem;
+  color: gray; }
+
+.tiles_box_list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.tiles_box_item {
+  flex: 0 0 100%; }
+  @media (min-width: 768px) {
+    .tiles_box_item {
+      flex: 0 0 50%; } }
+  @media (min-width: 992px) {
+    .tiles_box_item {
+      flex: 0 0 33.33%; } }
+  .tiles_box_item_outer {
+    padding: 0.5rem; }
+  .tiles_box_item_inner {
+    box-shadow: 0 0 1rem #cccccc;
+    padding: 1rem; }
+  .tiles_box_item_heading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0; }
+  .tiles_box_item_subheading {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  .tiles_box_item_image {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .tiles_box_item_image_outer {
+      position: relative;
+      margin: 1rem 0; }
+    .tiles_box_item_image_inner {
+      position: relative;
+      overflow: hidden;
+      background: #eeeeee;
+      padding-top: 8rem; }
+      @media (min-width: 768px) {
+        .tiles_box_item_image_inner {
+          padding-top: 12rem; } }
+      @media (min-width: 992px) {
+        .tiles_box_item_image_inner {
+          padding-top: 15rem; } }
+  .tiles_box_item_content {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0; }
